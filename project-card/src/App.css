@@ -1,0 +1,57 @@
+.app {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  min-height: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #222;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.info-label {
+  color: #666;
+  font-size: 15px;
+}
+
+.info-value {
+  color: #222;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
