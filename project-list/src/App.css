@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+.app {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  min-height: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #222;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.info-label {
+  color: #666;
+  font-size: 15px;
+}
+
+.info-value {
+  color: #222;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Skeleton */
+
+.skeleton-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  min-height: 280px;
+}
+
+.skeleton-title {
+  width: 60%;
+  height: 25px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.skeleton-line {
+  width: 100%;
+  height: 18px;
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Error */
+
+.error-box {
+  background-color: white;
+  border: 1px solid #f0b4b4;
+  border-radius: 12px;
+  padding: 45px;
+  text-align: center;
+}
+
+.error-box h2 {
+  color: #dc2626;
+}
+
+.error-box p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.error-box button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error-box button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Empty */
+
+.empty-box {
+  background-color: white;
+  border: 1px dashed #aaa;
+  border-radius: 12px;
+  padding: 50px;
+  text-align: center;
+}
+
+.empty-box h2 {
+  color: #333;
+}
+
+.empty-box p {
+  color: #666;
+}
+
+@media (max-width: 700px) {
+
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .app {
+    width: 94%;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}
